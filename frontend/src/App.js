@@ -3,21 +3,42 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container auth">
+        <a class="logo">MEMOPAD</a>
+        <div class="card">
+            <div class="header blue white-text center">
+                <div class="card-content">LOGIN</div>
+            </div>
+            <div class="card-content">
+                <div class="row">
+                    
+                    <div class="input-field col s12 username">
+                        <label>Username</label>
+                        <input
+                        name="username"
+                        type="text"
+                        class="validate"/>
+                    </div>
+                    <div class="input-field col s12">
+                        <label>Password</label>
+                        <input
+                        name="password"
+                        type="password"
+                        class="validate"/>
+                    </div>
+                    <a class="waves-effect waves-light btn">SUBMIT</a>
+                </div>
+            </div>
+            
+            
+            <div class="footer">
+                <div class="card-content">
+                    <div class="right" >
+                        New Here? <a>Create an account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   );
 }
