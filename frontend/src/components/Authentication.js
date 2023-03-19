@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import './App.css';
 
 Authentication.propTypes = {
     mode: React.PropTypes.bool,
